@@ -1,0 +1,114 @@
+$main: #7557d8;
+$text: #f6f6f6;
+$text-secondary: #aca6a6;
+
+.music-lists {
+    padding: 2em 0;
+    height: 100%;
+
+    h1 {
+        margin-bottom: 2em;
+        position: relative;
+        width: max-content;
+        margin: 1em auto 2em auto;
+
+        .count {
+            width: 1.65em;
+            height: 1.65em;
+            background-color: $main;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: -1.25em;
+            top: -0.5em;
+        }
+    }
+
+    .article {
+        width: 100%;
+        padding: 2em;
+        box-shadow: 2px 2px 15px #3e3d3d95;
+        transition: background-color 200ms linear;
+        cursor: pointer;
+        display: flex;
+        gap: 1em;
+        margin-top: 2em;
+
+        @media (max-width:771px) {
+            flex-direction: column;
+        }
+
+        &:hover {
+            background-color: #2c2a2a90;
+        }
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            width: 10em;
+
+            @media (max-width:771px) {
+                width: 100%;
+                text-align: center;
+            }
+
+            img {
+                width: 8em;
+                border-radius: 5px;
+
+                @media (max-width:771px) {
+                    margin: 0 auto;
+                }
+            }
+
+            a {
+                color: $text;
+                text-decoration: none;
+                margin-top: 1em;
+                font-weight: 600;
+                color: $text-secondary;
+            }
+
+            p {
+                margin-top: 10px;
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+
+        div {
+            h3 {
+                margin-bottom: 1em;
+
+                a {
+                    color: $text !important;
+                    font-weight: 400;
+                }
+            }
+
+            p {
+                margin-bottom: 10px;
+                color: $text-secondary;
+            }
+
+            .view-collection {
+                display: inline-block;
+                color: $text;
+                text-decoration: none;
+                background-color: $main;
+                padding: 0.75em 1em;
+                font-size: 14px;
+                border-radius: 5px;
+                margin-top: 0.5em;
+
+                &:hover {
+                    background-color: rgba($main, 0.75);
+                }
+            }
+        }
+    }
+}
