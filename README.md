@@ -10,6 +10,7 @@ SCSS
 
 ## Routes
 Home Page
+![Home Page](./public/home.png)
 Result Page
 
 [Live Demo](https://music-search-assessment.vercel.app/)
